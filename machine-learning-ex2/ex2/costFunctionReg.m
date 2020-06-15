@@ -27,9 +27,6 @@ J = ((1/m)*sigma)+regJ;
 regTheta = lambda .* theta .* [0; ones(length(theta)-1, 1)] ./ m;
 grad = transpose(transpose(h-y) * X / m) + regTheta;
 
-
-%grad =((h - y)' * X / m)' + lambda .* theta .* [0; ones(length(theta)-1, 1)] ./ m ;
-
 % =============================================================
 
 end
